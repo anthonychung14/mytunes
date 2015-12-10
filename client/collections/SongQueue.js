@@ -14,10 +14,10 @@ var SongQueue = Songs.extend({
         this.playFirst();
       }
     });
-
-    this.on('dequeue', function() {
-      this.dequeue();
-    }); 
+    
+    this.on('removeFromQueue', function(song) {
+      this.remove(song);
+    })
   },
 
 
