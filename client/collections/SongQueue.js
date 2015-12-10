@@ -7,12 +7,26 @@ var SongQueue = Songs.extend({
         this.playFirst();
       }
     });
+
+    this.on('ended', function(){
+      this.dequeue();
+      if (this.length > 0) {
+        this.playFirst();
+      }
+    });
+
+    this.on('dequeue', function() {
+      this.dequeue();
+    }); 
   },
 
 
-
   playFirst: function() {
-    console.log("yo");
-  } 
+    var song = this.at(0)
+    song.play()
+  },
 
+  dequeue: function(){
+    this.shift();
+  }
 });
