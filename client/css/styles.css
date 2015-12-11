@@ -1,0 +1,44 @@
+body {
+/*  background: url('http://brandthunder.com/wp/wp-content/uploads/2015/03/music-loving-puppy-desktop-background-1024x640.jpg');
+  background-repeat: none;
+  background-size: cover;
+*/}
+
+.container {
+  width: 550px;
+  height: 515px;
+  margin: 50px auto;
+  border: 1px solid black;
+  text-align: center;
+}
+
+audio {
+  margin-top: 35px;
+  margin-bottom: 35px;
+
+}
+
+table{
+  margin: 10px auto;
+
+}
+
+td, th {
+  padding: 0px;
+  width: 130px;
+  text-align: center;
+}
+
+span {
+  margin-right: 5px;
+
+}
+
+.isliked {
+  color: green;
+
+}
+
+.isdisliked {
+  color: red;
+}
